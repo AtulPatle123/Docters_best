@@ -1,0 +1,141 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+Contact-us
+{% endblock %}
+{% block body %}
+        <!-- Page Title -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="h1 font-w-700 dark-color">Got a Question?</h1>
+                        <p class="lead m-0px">We are here to help us We are here to help us We are here to help us We
+                            are here to help us We are here to help us </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Page Title -->
+
+        <!-- Section -->
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 m-15px-tb">
+                        <div class="card h-100 box-shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-lg theme-bg white-color border-radius-5 d-inline-block">
+                                    <i class="fas fa-map-signs"></i>
+                                </div>
+                                <h5 class="m-20px-t font-w-700 dark-color">Address</h5>
+                                <P class="m-0px">No 11 2102 street Myanmar .</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 m-15px-tb">
+                        <div class="card h-100 box-shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-lg theme-bg white-color border-radius-5 d-inline-block">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5 class="m-20px-t font-w-700 dark-color">Email</h5>
+                                <P class="m-0px">info.wearehere@gmail.com<br />support@example.com</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 m-15px-tb">
+                        <div class="card h-100 box-shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-lg theme-bg white-color border-radius-5 d-inline-block">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <h5 class="m-20px-t font-w-700 dark-color">Phone</h5>
+                                <P class="m-0px">+95 9589271538 <br> +95 954026845</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 m-15px-tb">
+                        <div class="card h-100 box-shadow">
+                            <div class="card-body text-center">
+                                <div class="icon-lg theme-bg white-color border-radius-5 d-inline-block">
+                                    <i class="fas fa-fax"></i>
+                                </div>
+                                <h5 class="m-20px-t font-w-700 dark-color">Fax</h5>
+                                <P class="m-0px">+95 17611028</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Section -->
+        <section class="section" id="applynow">
+            <div class="container">
+                <div class="row section-title justify-content-center text-center md-m-25px-b m-45px-b">
+                    <div class="col-lg-7">
+                        <label class="theme-bg-alt p-15px-lr p-5px-tb font-small border-radius-15 theme-color">Contact
+                            Us</label>
+                        <h3 class="h1 font-w-700 dark-color m-10px-b">Tell us about yourself</h3>
+                        <p class="lead"> how we can help to you how we can help to you how we can help to you how we can
+                            help to you</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-11 col-lg-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="dark-color font-w-700">Full Name</label>
+                                                <input type="text" class="form-control" placeholder="Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="dark-color font-w-700">Your Email</label>
+                                                <input type="text" class="form-control" placeholder="Example@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="dark-color font-w-700">Subject</label>
+                                                <input type="text" class="form-control" placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="dark-color font-w-700">Phone</label>
+                                                <input type="text" class="form-control" placeholder="+95 **********">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="dark-color font-w-700">How Can We Help You?</label>
+                                                <textarea class="form-control" rows="6" name="answer"
+                                                    placeholder="Hello, There! "
+                                                    aria-label="How'd you hear about Front?" required=""
+                                                    data-msg="Please enter an answer." data-error-class="u-has-error"
+                                                    data-success-class="u-has-success"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 text-center p-15px-t">
+                                            <button class="m-btn m-btn-radius m-btn-theme">Submit</button>
+                                        </div>
+                                        <div class="col-md-12 text-center p-15px-t"><small class="font-w-700">We'll get
+                                                back to you in 1-2 business days.</small></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+   {% endblock %}

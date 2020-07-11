@@ -1,0 +1,76 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- title -->
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- plugin CSS -->
+    <link href="{% static 'plugin/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugin/font-awesome/css/all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'plugin/et-line/style.css" rel="stylesheet' %}">
+    <link href="{% static 'plugin/themify-icons/themify-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'plugin/magnific/magnific-popup.css' %}" rel="stylesheet">
+
+    <!-- theme css -->
+    <link href="{% static 'style/master.css' %}" rel="stylesheet">
+    <link href="{% static 'style/this.css' %}" rel="stylesheet">
+
+</head>
+<!-- Body Start -->
+
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
+    <!-- page loading -->
+    <div id="loading">
+        <div class="load-circle"><span class="one"></span></div>
+    </div>
+    <!-- End Preload -->
+
+    <!-- Header -->
+
+    {% include 'home/navbar.html' %}
+
+    <!-- Header End -->
+
+    <!-- Main -->
+    <main>
+        {% block body %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer-->
+
+    {% include 'home/footer.html' %}
+
+    <!-- End Footer -->
+
+    {% block js %}
+    <!-- jquery -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery-migrate-3.0.0.min.js' %}"></script>
+    <!-- end jquery -->
+
+    <!-- appear -->
+    <script src="{% static 'plugin/appear/jquery.appear.js' %}"></script>
+    <!-- end appear -->
+
+    <!--bootstrap-->
+    <script src="{% static 'plugin/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'plugin/bootstrap/js/bootstrap.js' %}"></script>
+    <!--end bootstrap-->
+    <!-- custom js -->
+    <script src="{% static 'js/custom.js' %}"></script>
+
+ 
+    {% endblock %}
+    <!-- end -->
+</body>
+<!-- end body -->
+
+</html>
